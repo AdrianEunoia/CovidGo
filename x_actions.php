@@ -120,7 +120,7 @@ if($action == 'loginAction'){
 }else if($action=='updateDelete'){
   $lats = $_POST['offset0'];
 
-  $sql = "UPDATE markers SET status = 4 WHERE cords = '$lats'";  
+  $sql = "UPDATE markers SET status = 1 WHERE cords = '$lats'";  
   if ($conn->query($sql) === TRUE) {
     $result = "Ok";
   }else {
